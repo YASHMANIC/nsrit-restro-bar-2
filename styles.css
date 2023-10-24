@@ -1,0 +1,1158 @@
+body{
+    background-color: #ffcc00;
+}
+h1
+{
+    font-family: 'oxygen',sans-serif;
+    color:#3d0c02;
+}
+h1:hover
+{
+    color: yellowgreen;
+}
+#header-nav
+{
+    background-color: #b06500 ;
+    font-family: 'oxygen',sans-serif;
+    border-radius: 0;
+    border:0;
+}
+#log-img
+{
+    background: url(new\ logo.jpeg) no-repeat;
+    height:100px;
+    width: 100px;
+    margin:10px 15px 10px 0px;
+}
+#nav-list
+{
+    margin-top: 10px;
+}
+#nav-list a{
+    color:#000;
+    text-align: center;
+}
+#nav-list a:hover
+{
+    background: #E7E7E7;
+}
+#nav-list a span{
+    font-size: 1.8em;
+}
+#phone
+{
+    margin-top: 5px;
+}
+#phone a
+{
+    padding-bottom: 0;
+    text-align: right;
+}
+#phone div{
+    color:green;
+    text-align: right;
+    padding-right: 15px;
+}
+.navbar-header button.navbar-toggle
+{
+    clear:both;
+    margin-top: -30px;
+}
+.navbar-header button.navbar-toggle, .navbar-header.icon-bar
+{
+    border: 1px solid #ffcc00;
+}
+#collapsable-nav a{
+    font-size: 1.2em;
+}
+#collapsable-nav a span{
+    font-size: 1em;
+    margin-right: 5px;
+}
+.navbar-brand a:hover,.navbar-brand a:focus{
+    text-decoration:underline;
+}
+/*main content*/
+#call-btn
+{
+    border: 2px solid #000;
+    background-color: #b06500 ;
+}
+#call-btn a{
+    color: #000;
+}
+#call-btn a:hover{
+    color:yellow;
+}
+#xs-deliver
+{
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-family:'oxygen',sans-serif;
+}
+.container .jumbotron, .container-fluid .jumbotron {
+    padding-right: 0px;
+    padding-left: 0px;
+    border-radius: 6px;
+}
+.jumbotron
+{
+    box-shadow: 0 0 50px #3f0c1f;
+    border: 2px solid #3f0c1f;
+}
+#drinks-title,#food-title,#map-title
+{
+    height: 250px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px;
+    overflow: hidden;
+    border: 2px solid #3f0c1f;;
+}
+#drinks-title:hover,#food-title:hover,#map-title:hover
+{
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
+#drinks-title
+{
+    background: url("drinks.jpg") no-repeat;
+    background-position: center;
+}
+#food-title
+{
+    background: url("chicken.jpg") no-repeat;
+    background-position: center;
+}
+#drinks-title span,#food-title span,#map-title span
+{
+    position:absolute;
+    right: 0;
+    width: 100%;
+    bottom: 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5em;
+    background-color: #000;
+    color: #fff;
+    opacity: .8;
+}
+/* beer category page */
+.beer-item-tile
+{
+    margin-bottom: 25px;
+}
+.beer-item-tile hr
+{
+    width:80%;
+}
+.beer-item-tile .beer-item-price
+{
+    font-size: 1.1em;
+    text-align: center;
+    margin-top: -15px;
+    margin-right: -15px;
+}
+.beer-item-photo
+{
+    position: relative;
+    border: 2px solid #3f0c1f;
+    overflow: hidden;
+    padding: 0;
+    margin-right: -15px;
+    margin-left: auto;
+    margin-bottom: 20px;
+    max-width: 250px;
+}
+.beer-item-photo div
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80px;
+    background-color: #557c3e;
+    text-align: center;
+}
+.beer-item-description
+{
+    padding-right: 30px;
+}
+h3 .beer-item-title
+{
+    margin:0 0 10px
+}
+.beer-item-details
+{
+    font-size: .9em;
+    font-style: italics;
+}
+/* wine category page */
+.wine-item-tile
+{
+    margin-bottom: 25px;
+}
+.wine-item-tile hr
+{
+    width:80%;
+}
+.wine-item-tile .wine-item-price
+{
+    font-size: 1.1em;
+    text-align: center;
+    margin-top: -15px;
+    margin-right: -15px;
+}
+.wine-item-photo
+{
+    position: relative;
+    border: 2px solid #3f0c1f;
+    overflow: hidden;
+    padding: 0;
+    margin-right: -15px;
+    margin-left: auto;
+    margin-bottom: 20px;
+    max-width: 250px;
+}
+.wine-item-photo div
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80px;
+    background-color: #557c3e;
+    text-align: center;
+}
+.wine-item-description
+{
+    padding-right: 30px;
+}
+h3 .wine-item-title
+{
+    margin:0 0 10px
+}
+.wine-item-details
+{
+    font-size: .9em;
+    font-style: italics;
+}
+/* scotch categories *******/
+.scotch-item-tile
+{
+    margin-bottom: 25px;
+}
+.scotch-item-tile hr
+{
+    width:80%;
+}
+.scotch-item-tile .scotch-item-price
+{
+    font-size: 1.1em;
+    text-align: center;
+    margin-top: -15px;
+    margin-right: -15px;
+}
+.scotch-item-photo
+{
+    position: relative;
+    border: 2px solid #3f0c1f;
+    overflow: hidden;
+    padding: 0;
+    margin-right: -15px;
+    margin-left: auto;
+    margin-bottom: 20px;
+    max-width: 250px;
+}
+.scotch-item-photo div
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80px;
+    background-color: #557c3e;
+    text-align: center;
+}
+.scotch-item-description
+{
+    padding-right: 30px;
+}
+h3 .scotch-item-title
+{
+    margin:0 0 10px
+}
+.scotch-item-details
+{
+    font-size: .9em;
+    font-style: italics;
+}
+/***** vodka categories ********/
+.vodka-item-tile
+{
+    margin-bottom: 25px;
+}
+.vodka-item-tile hr
+{
+    width:80%;
+}
+.vodka-item-tile .vodka-item-price
+{
+    font-size: 1.1em;
+    text-align: center;
+    margin-top: -15px;
+    margin-right: -15px;
+}
+.vodka-item-photo
+{
+    position: relative;
+    border: 2px solid #3f0c1f;
+    overflow: hidden;
+    padding: 0;
+    margin-right: -15px;
+    margin-left: auto;
+    margin-bottom: 20px;
+    max-width: 250px;
+}
+.vodka-item-photo div
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80px;
+    background-color: #557c3e;
+    text-align: center;
+}
+.vodka-item-description
+{
+    padding-right: 30px;
+}
+h3 .vodka-item-title
+{
+    margin:0 0 10px
+}
+.vodka-item-details
+{
+    font-size: .9em;
+    font-style: italics;
+}
+/*****tequila ********/
+.tequila-item-tile
+{
+    margin-bottom: 25px;
+}
+.tequila-item-tile hr
+{
+    width:80%;
+}
+.tequila-item-tile .tequila-item-price
+{
+    font-size: 1.1em;
+    text-align: center;
+    margin-top: -15px;
+    margin-right: -15px;
+}
+.tequila-item-photo
+{
+    position: relative;
+    border: 2px solid #3f0c1f;
+    overflow: hidden;
+    padding: 0;
+    margin-right: -15px;
+    margin-left: auto;
+    margin-bottom: 20px;
+    max-width: 250px;
+}
+.tequila-item-photo div
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80px;
+    background-color: #557c3e;
+    text-align: center;
+}
+.tequila-item-description
+{
+    padding-right: 30px;
+}
+h3 .tequila-item-title
+{
+    margin:0 0 10px
+}
+.tequila-item-details
+{
+    font-size: .9em;
+    font-style: italics;
+}
+/******* rum categories ********/
+.rum-item-tile
+{
+    margin-bottom: 25px;
+}
+.rum-item-tile hr
+{
+    width:80%;
+}
+.rum-item-tile .rum-item-price
+{
+    font-size: 1.1em;
+    text-align: center;
+    margin-top: -15px;
+    margin-right: -15px;
+}
+.rum-item-photo
+{
+    position: relative;
+    border: 2px solid #3f0c1f;
+    overflow: hidden;
+    padding: 0;
+    margin-right: -15px;
+    margin-left: auto;
+    margin-bottom: 20px;
+    max-width: 250px;
+}
+.rum-item-photo div
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80px;
+    background-color: #557c3e;
+    text-align: center;
+}
+.rum-item-description
+{
+    padding-right: 30px;
+}
+h3 .rum-item-title
+{
+    margin:0 0 10px
+}
+.rum-item-details
+{
+    font-size: .9em;
+    font-style: italics;
+}
+#button
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+}
+/******biryani ********/
+.biryani-item-tile
+{
+    margin-bottom: 25px;
+}
+.biryani-item-tile hr
+{
+    width:80%;
+}
+.biryani-item-tile .biryani-item-price
+{
+    font-size: 1.1em;
+    text-align: center;
+    margin-top: -15px;
+    margin-right: -15px;
+}
+.biryani-item-photo
+{
+    position: relative;
+    border: 2px solid #3f0c1f;
+    overflow: hidden;
+    padding: 0;
+    margin-right: -15px;
+    margin-left: auto;
+    margin-bottom: 20px;
+    max-width: 250px;
+}
+.biryani-item-photo div
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80px;
+    background-color: #557c3e;
+    text-align: center;
+}
+.biryani-item-description
+{
+    padding-right: 30px;
+}
+h3 .biryani-item-title
+{
+    margin:0 0 10px
+}
+.biryani-item-details
+{
+    font-size: .9em;
+    font-style: italics;
+}
+/****desserts ***********/
+.dessert-item-tile
+{
+    margin-bottom: 25px;
+}
+.dessert-item-tile hr
+{
+    width:80%;
+}
+.dessert-item-tile .dessert-item-price
+{
+    font-size: 1.1em;
+    text-align: center;
+    margin-top: -15px;
+    margin-right: -15px;
+}
+.dessert-item-photo
+{
+    position: relative;
+    border: 2px solid #3f0c1f;
+    overflow: hidden;
+    padding: 0;
+    margin-right: -15px;
+    margin-left: auto;
+    margin-bottom: 20px;
+    max-width: 250px;
+}
+.dessert-item-photo div
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80px;
+    background-color: #557c3e;
+    text-align: center;
+}
+.dessert-item-description
+{
+    padding-right: 30px;
+}
+h3 .dessert-item-title
+{
+    margin:0 0 10px
+}
+.dessert-item-details
+{
+    font-size: .9em;
+    font-style: italics;
+}
+/***********soft drinks ************/
+.soft-item-tile
+{
+    margin-bottom: 25px;
+}
+.soft-item-tile hr
+{
+    width:80%;
+}
+.soft-item-tile .soft-item-price
+{
+    font-size: 1.1em;
+    text-align: center;
+    margin-top: -15px;
+    margin-right: -15px;
+}
+.soft-item-photo
+{
+    position: relative;
+    border: 2px solid #3f0c1f;
+    overflow: hidden;
+    padding: 0;
+    margin-right: -15px;
+    margin-left: auto;
+    margin-bottom: 20px;
+    max-width: 250px;
+}
+.soft-item-photo div
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80px;
+    background-color: #557c3e;
+    text-align: center;
+}
+.soft-item-description
+{
+    padding-right: 30px;
+}
+h3 .soft-item-title
+{
+    margin:0 0 10px
+}
+.soft-item-details
+{
+    font-size: .9em;
+    font-style: italics;
+}
+/****** starters ************/
+.starters-item-tile
+{
+    margin-bottom: 25px;
+}
+.starters-item-tile hr
+{
+    width:80%;
+}
+.starters-item-tile .starters-item-price
+{
+    font-size: 1.1em;
+    text-align: center;
+    margin-top: -15px;
+    margin-right: -15px;
+}
+.starters-item-photo
+{
+    position: relative;
+    border: 2px solid #3f0c1f;
+    overflow: hidden;
+    padding: 0;
+    margin-right: -15px;
+    margin-left: auto;
+    margin-bottom: 20px;
+    max-width: 250px;
+}
+.starters-item-photo div
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80px;
+    background-color: #557c3e;
+    text-align: center;
+}
+.starters-item-description
+{
+    padding-right: 30px;
+}
+h3 .starters-item-title
+{
+    margin:0 0 10px
+}
+.starters-item-details
+{
+    font-size: .9em;
+    font-style: italics;
+}
+/********chicken********/
+.chicken-item-tile
+{
+    margin-bottom: 25px;
+}
+.chicken-item-tile hr
+{
+    width:80%;
+}
+.chicken-item-tile .chicken-item-price
+{
+    font-size: 1.1em;
+    text-align: center;
+    margin-top: -15px;
+    margin-right: -15px;
+}
+.chicken-item-photo
+{
+    position: relative;
+    border: 2px solid #3f0c1f;
+    overflow: hidden;
+    padding: 0;
+    margin-right: -15px;
+    margin-left: auto;
+    margin-bottom: 20px;
+    max-width: 250px;
+}
+.chicken-item-photo div
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80px;
+    background-color: #557c3e;
+    text-align: center;
+}
+.chicken-item-description
+{
+    padding-right: 30px;
+}
+h3 .chicken-item-title
+{
+    margin:0 0 10px
+}
+.chicken-item-details
+{
+    font-size: .9em;
+    font-style: italics;
+}
+/**********snacks **************/
+.snacks-item-tile
+{
+    margin-bottom: 25px;
+}
+.snacks-item-tile hr
+{
+    width:80%;
+}
+.snacks-item-tile .snacks-item-price
+{
+    font-size: 1.1em;
+    text-align: center;
+    margin-top: -15px;
+    margin-right: -15px;
+}
+.snacks-item-photo
+{
+    position: relative;
+    border: 2px solid #3f0c1f;
+    overflow: hidden;
+    padding: 0;
+    margin-right: -15px;
+    margin-left: auto;
+    margin-bottom: 20px;
+    max-width: 250px;
+}
+.snacks-item-photo div
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80px;
+    background-color: #557c3e;
+    text-align: center;
+}
+.snacks-item-description
+{
+    padding-right: 30px;
+}
+h3 .snacks-item-title
+{
+    margin:0 0 10px
+}
+.snacks-item-details
+{
+    font-size: .9em;
+    font-style: italics;
+}
+/******** large devices **********/
+@media(min-width:1200px)
+{
+    #addtocart
+{
+    height: max-content;
+}
+#quantity
+{
+    height: max-content;
+}
+        .jumbotron{
+        background: url("1.jpg") no-repeat;
+        height: 675px;
+        box-shadow: 0 0 50px #3f0c1f;
+        border:2px solid #3f0c1f;
+           }
+           input
+{
+    height: 19px;
+}
+}
+/******** medium devices **********/
+@media(min-width:992px) and (max-width:1199px)
+{
+    #addtocart
+    {
+        height: max-content;
+    }
+    #quantity
+    {
+        height: max-content;
+    }
+    #logo-img
+    {
+        background: url("Screenshot.png") no-repeat;
+        height: 100px;
+        width: 100px;
+        margin: 5px 5px 5px 0;
+    }
+    .jumbotron{
+        background: url("wine 940.jpg") no-repeat;
+        height: 558px;
+        box-shadow: 0 0 50px #3f0c1f;
+        border:2px solid #3f0c1f;
+           }
+           input
+{
+    height: 19px;
+}
+
+}
+/******small devices ********/
+@media(min-width:768px) and (max-width:991px)
+{
+    #addtocart
+{
+    height: max-content;
+}
+#quantity
+{
+    height: max-content;
+}
+    .navbar-brand
+    {
+        padding-top: 10px;
+        height: 90px;
+    }
+    .navbar-brand h1
+    {
+        padding-top: 10px;
+        font-size: 5vw;
+    }
+    .jumbotron{
+        background: url("wine 850.jpg") no-repeat;
+        height: 432px;
+        box-shadow: 0 0 50px #3f0c1f;
+        border:2px solid #3f0c1f;
+           }
+}
+/****** extra small devices ********/
+@media(max-width:767px)
+{
+    #addtocart
+{
+    height: max-content;
+}
+#quantity
+{
+    height: max-content;
+}
+    .navbar-brand
+    {
+        padding-top: 10px;
+        height: 80px;
+    }
+    .navbar-brand h1
+    {
+        padding-top: 10px;
+        font-size: 5vw;
+    }
+    .jumbotron
+    {
+        margin-top: 30px;
+        padding:0;
+        padding-left: 30px;
+        padding-right: 30px;
+        box-shadow: 0 0 50px #3f0c1f;
+        border:2px solid #3f0c1f;
+    }
+    #drinks-title,#food-title
+    {
+        width: 360px;
+        margin: 0px auto 15px;
+    }
+    .beer-item-photo
+    {
+        margin-right: auto;
+    }
+    .beer-item-tile .beer-item-price
+    {
+        text-align: center;
+    }
+    .beer-item-description
+    {
+        text-align: center;
+    }
+    .wine-item-photo
+    {
+        margin-right: auto;
+    }
+    .wine-item-tile .wine-item-price
+    {
+        text-align: center;
+    }
+    .wine-item-description
+    {
+        text-align: center;
+    }
+    .scotch-item-photo
+    {
+        margin-right: auto;
+    }
+    .scotch-item-tile .scotch-item-price
+    {
+        text-align: center;
+    }
+    .scotch-item-description
+    {
+        text-align: center;
+    }
+    .vodka-item-photo
+    {
+        margin-right: auto;
+    }
+    .vodka-item-tile .vodka-item-price
+    {
+        text-align: center;
+    }
+    .vodka-item-description
+    {
+        text-align: center;
+    }
+    .tequila-item-photo
+    {
+        margin-right: auto;
+    }
+    .tequila-item-tile .tequila-item-price
+    {
+        text-align: center;
+    }
+    .tequila-item-description
+    {
+        text-align: center;
+    }
+    .rum-item-photo
+    {
+        margin-right: auto;
+    }
+    .rum-item-tile .rum-item-price
+    {
+        text-align: center;
+    }
+    .rum-item-description
+    {
+        text-align: center;
+    }
+    .biryani-item-photo
+    {
+        margin-right: auto;
+    }
+    .biryani-item-tile .biryani-item-price
+    {
+        text-align: center;
+    }
+    .biryani-item-description
+    {
+        text-align: center;
+    }
+    .dessert-item-photo
+    {
+        margin-right: auto;
+    }
+    .dessert-item-tile .dessert-item-price
+    {
+        text-align: center;
+    }
+    .dessert-item-description
+    {
+        text-align: center;
+    }
+    .soft-item-photo
+    {
+        margin-right: auto;
+    }
+    .soft-item-tile .soft-item-price
+    {
+        text-align: center;
+    }
+    .soft-item-description
+    {
+        text-align: center;
+    }
+    .starters-item-photo
+    {
+        margin-right: auto;
+    }
+    .starters-item-tile .starters-item-price
+    {
+        text-align: center;
+    }
+    .starters-item-description
+    {
+        text-align: center;
+    }
+    .chicken-item-photo
+    {
+        margin-right: auto;
+    }
+    .chicken-item-tile .chicken-item-price
+    {
+        text-align: center;
+    }
+    .chicken-item-description
+    {
+        text-align: center;
+    }
+    .snacks-item-photo
+    {
+        margin-right: auto;
+    }
+    .snacks-item-tile .snacks-item-price
+    {
+        text-align: center;
+    }
+    .snacks-item-description
+    {
+        text-align: center;
+    }
+}
+/******* extra extra small devices *********/
+/* header */
+@media(max-width:479px)
+{
+    #addtocart
+{
+    height: max-content;
+}
+#quantity
+{
+    height: max-content;
+}
+.navbar-brand h1
+{
+    padding-top: 5px;
+    font-size: 6vw;
+}
+/* home page */
+#drinks-title,#food-title
+{
+    width:280px;
+    margin: 0 auto 15px;
+}
+.col-xxs-12
+{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
+}
+input
+{
+    height: 19px;
+}
+#addtocart
+{
+    height: 19px;
+}
+}
+/****** drinks categories ******/
+.drinks-tile
+{
+    position: relative;
+    border: 2px solid #3F0C1F;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 15px;
+}
+.drinks-tile span
+{
+    position: absolute;
+    bottom: 0;
+    right:0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    background-color: #000;
+    color:#fff;
+    opacity: .8;
+}
+.drinks-tile:hover
+{
+    box-shadow: 0px 1px 5px 1px #cccccc;
+}
+#drinks-categories + div
+{
+    margin-bottom: 50px;
+}
+/******food categories *********/
+.food-tile
+{
+    position: relative;
+    border: 2px solid #3F0C1F;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 15px;
+}
+.food-tile span
+{
+    position: absolute;
+    bottom: 0;
+    right:0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    background-color: #000;
+    color:#fff;
+    opacity: .8;
+}
+.food-tile:hover
+{
+    box-shadow: 0px 1px 5px 1px #cccccc;
+}
+#food-categories + div
+{
+    margin-bottom: 50px;
+}
+/***** footer ***/
+.panel-footer
+{
+    color:wheat;
+    margin-top: 30px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    border-top: 0;
+    border-radius: 0;
+    border: 0;
+    background-color:black;
+}
+.panel-footer div.row
+{
+    margin-bottom: 35px;
+
+}
+#hours,#address
+{
+    line-height: 2;
+}
+#hours>span,#address> span
+{
+    font-size: 1.3em;
+}
+#address p{
+    font-size: .8em;
+    line-height: 1.8;
+    color:#5573ce
+}
+#testimonials
+{
+    font-style: italic;
+}
+#testimonials p:nth-child(2)
+{
+margin-top: 25px;
+}
+#shoppingcart
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+#motivation
+{
+    text-align: center;
+    height: 500px;
+    width: 2000px;
+}
+#carts
+{
+    display: flex;
+}
+#addtocart
+{
+    height: max-content;
+}
+#quantity
+{
+    height: max-content;
+}

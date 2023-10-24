@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html ng-app="ShoppingListApp">
+<head>
+	<title>NEW SITE</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&family=Oxygen:wght@700&display=swap" rel="stylesheet">
+</head>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<body style="text-align: center;">
+    <header>
+        <nav id="header-nav" class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="index.html" class="pull-left visible-lg visible-md">
+                        <div class="container" id="log-img" alt="logo image"></div>
+                    </a>
+                    <div class="navbar-brand">
+                       <a href="index.html"> <h1>NSRIT RESTRO BAR</h1></a>
+                    </div>
+                </div>
+                    <div class="navbar-header">
+                        <button type="button" id="navbar" class="navbar-toggle glyphicon-collapse-down" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span> 
+                        </button>
+                        </div>
+                    <div id="collapsable-nav" class="collapse navbar-collapse">
+                        <ul id="nav-list" class="nav navbar-nav navbar-right">
+                            <li class="visible-xs">
+                                <a href="index.html">
+                                    <span class="glyphicon glyphicon-home"></span><br class="hidden-xs">Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="drinks.html">
+                                    <span class="glyphicon glyphicon-glass"></span><br class="hidden-xs">Drinks
+                                </a>
+                            </li>
+                            <li>
+                                <a href="food.html">
+                                    <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs">Food
+                                </a>
+                            </li>
+                            <li class="active">
+                                <a href="cart.html">
+                                    <span class="glyphicon glyphicon-shopping-cart"></span><br class="hidden-xs">Cart
+                                </a>
+                            </li>
+                            <li id="phone" class="hidden-xs">
+                                <a href="tel:9502664170">
+                                    <span>9502664170</span>
+                                </a><div>*we Deliver</div>
+                            </li>
+                        </ul>
+                   </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--start of content-->
+    <h2>Drinks categories</h2>
+    <div class="container">
+<div id="carts" ng-controller="ShoppingListAddController as itemAdder">
+    <label for="beer" class="col-xs-3 col-sm-3 col-md-3 col-lg-3" aria-placeholder="choose the beer">Choose the Beer:</label>
+  <select class="col-xs-3 col-sm-3 col-md-3 col-lg-3" name="beer" id="beer" ng-model="itemAdder.itemName">
+    <option value="Budwiser premium beer">Budwiser premium beer</option>
+    <option value="Kingfisher premium beer">Kingfisher premium beer</option>
+    <option value="Corona premium beer">Corona premium beer</option>
+    <option value="Bira 91 premium beer">Bira 91 premium beer</option>
+    <option value="Carlsberg premium beer">Carlsberg premium beer</option>
+    <option value="Tuborg premium beer">Tuborg premium beer</option>
+    <option value="Foster premium beer">Foster premium beer</option>
+    <option value="Heineken premium beer">Heineken premium beer</option>
+    <option value="Bro code premium beer">Foster premium beer</option>
+    <option value="Britishempire beer">Britishempire beer</option>
+  </select> 
+    <input class="col-xs-3 col-sm-3 col-md-3 col-lg-3" type="number" required ng-model="itemAdder.itemQuantity" id="quantity" placeholder="Quantity">  
+    <button id="addtocart" class="col-xs-3 col-sm-3 col-md-3 col-lg-3" ng-click="itemAdder.addItem();">Add Item TO Cart</button> 
+</div>
+<div id="carts" ng-controller="ShoppingListAddController as itemAdder">
+    <label for="wine" class="col-xs-3 col-sm-3 col-md-3 col-lg-3">Choose the wine:</label>
+  <select class="col-xs-3 col-sm-3 col-md-3 col-lg-3" name="wine" id="wine" ng-model="itemAdder.itemName">
+    <option value="Penfolds Red wine(Full)">Penfolds Red wine(Full)</option>
+    <option value="Penfolds Red wine(Half)">Penfolds Red wine(Half)</option>
+    <option value="La Crema White wine(Full)">La Crema White wine(Full)</option>
+    <option value="La Crema White wine(Half)">La Crema White wine(Half)</option>
+    <option value="Chateau Miraval Rose wine(Full)">Chateau Miraval Rose wine(Full)</option>
+    <option value="Chateau Miraval Rose wine(Half)">Chateau Miraval Rose wine(Half)</option>
+    <option value="Bollinger Sparkling wine(Full)">Bollinger Sparkling wine(Full)</option>
+    <option value="Bollinger Sparkling wine(Half)">Bollinger Sparkling wine(Half)</option>
+    <option value="Moscato Desert wine(Full)">Moscato Desert wine(Full)</option>
+    <option value="Moscato Desert wine(Half)">Moscato Desert wine(Half)</option>
+  </select> 
+    <input type="number" class="col-xs-3 col-sm-3 col-md-3 col-lg-3" ng-model="itemAdder.itemQuantity" id="quantity" placeholder="Quantity">  
+    <button id="addtocart" class="col-xs-3 col-sm-3 col-md-3 col-lg-3" ng-click="itemAdder.addItem();">Add Item TO Cart</button> 
+</div>
+<div id="carts" ng-controller="ShoppingListAddController as itemAdder">
+    <label class="col-xs-3 col-sm-3 col-md-3 col-lg-3" for="scotch">Choose the scotch:</label>
+  <select class="col-xs-3 col-sm-3 col-md-3 col-lg-3" name="scotch" id="scotch" ng-model="itemAdder.itemName">
+    <option value="Johnnie walker's Blue label">Johnnie walker's Blue label</option>
+    <option value="Glenfiddich">Glenfiddich</option>
+    <option value="The Glenlivet">The Glenlivet</option>
+    <option value="Ballantines">Ballantines</option>
+    <option value="The Macallan">The Macallan</option>
+    <option value="Chivas Regal">Chivas Regal</option>
+    <option value="Monkey shoulder">Monkey shoulder</option>
+    <option value="The Balvenie">The Balvenie</option>
+    <option value="Lagavulin">Lagavulin</option>
+    <option value="Johnnie walker's Red label">Johnnie walker's Red label</option>
+  </select> 
+    <input class="col-xs-3 col-sm-3 col-md-3 col-lg-3" type="number" ng-model="itemAdder.itemQuantity" id="quantity" placeholder="Quantity">  
+    <button id="addtocart" class="col-xs-3 col-sm-3 col-md-3 col-lg-3" ng-click="itemAdder.addItem();">Add Item TO Cart</button> 
+</div>
+<div id="carts" ng-controller="ShoppingListAddController as itemAdder">
+    <label class="col-xs-3 col-sm-3 col-md-3 col-lg-3" for="vodka">Choose the vodka:</label>
+  <select class="col-xs-3 col-sm-3 col-md-3 col-lg-3" name="vodka" id="vodka" ng-model="itemAdder.itemName">
+    <option value="Belvedere Vodka">Belvedere Vodka</option>
+    <option value="Smirnoff Vodka">Smirnoff Vodka</option>
+    <option value="Bacardi Lemon Vodka">Bacardi Lemon Vodka</option>
+    <option value="Absolut Vodka">Absolut Vodka</option>
+    <option value="Grey Goose Vodka">Grey Goose Vodka</option>
+    <option value="Chopin Family Reserve Vodka">Chopin Family Reserve Vodka</option>
+    <option value="Karlsson's Gold Vodka">Karlsson's Gold Vodka</option>
+    <option value="Ketel one Vodka">Ketel one Vodka</option>
+    <option value="Harridan Vodka">Harridan Vodka</option>
+    <option value="Magic Moments">Magic Moments</option>
+  </select> 
+    <input class="col-xs-3 col-sm-3 col-md-3 col-lg-3" type="number" ng-model="itemAdder.itemQuantity" id="quantity" placeholder="Quantity">  
+    <button id="addtocart" class="col-xs-3 col-sm-3 col-md-3 col-lg-3" ng-click="itemAdder.addItem();">Add Item TO Cart</button> 
+</div>
+<div id="carts" ng-controller="ShoppingListAddController as itemAdder">
+    <label class="col-xs-3 col-sm-3 col-md-3 col-lg-3" for="Tequila">Choose the Tequila:</label>
+  <select class="col-xs-3 col-sm-3 col-md-3 col-lg-3" name="Tequila" id="Tequila" ng-model="itemAdder.itemName">
+    <option value="818 Tequila">818 Tequila</option>
+    <option value="Patrón Tequila">Patrón Tequila</option>
+    <option value="El Capo Tequila">El Capo Tequila</option>
+    <option value="Sierra Tequila">Sierra Tequila</option>
+    <option value="Sauza Tequila">Sauza Tequila</option>
+    <option value="Pepe Lopez Tequila">Pepe Lopez Tequila</option>
+    <option value="Don Angel Tequila">Don Angel Tequila</option>
+    <option value="Don Julio Tequila">Don Julio Tequila</option>
+    <option value="La Chica Tequila">La Chica Tequila</option>
+    <option value="DesmondJi Tequila">DesmondJi Tequila</option>
+  </select> 
+    <input class="col-xs-3 col-sm-3 col-md-3 col-lg-3" type="number" ng-model="itemAdder.itemQuantity" id="quantity" placeholder="Quantity">  
+    <button id="addtocart" class="col-xs-3 col-sm-3 col-md-3 col-lg-3" ng-click="itemAdder.addItem();">Add Item TO Cart</button> 
+</div>
+<div id="carts" ng-controller="ShoppingListAddController as itemAdder">
+    <label class="col-xs-3 col-sm-3 col-md-3 col-lg-3" for="Rum">Choose the Rum:</label>
+  <select class="col-xs-3 col-sm-3 col-md-3 col-lg-3" name="Rum" id="Rum" ng-model="itemAdder.itemName">
+    <option value="El Dorado Rum">El Dorado Rum</option>
+    <option value="Mount Gay Rum">Mount Gay Rum</option>
+    <option value="Malibu Rum">Malibu Rum</option>
+    <option value="Appleton Estate Rum">Appleton Estate Rum</option>
+    <option value="Old Monk Rum">Old Monk Rum</option>
+    <option value="McDowell's NO1 Rum">McDowell's NO1 Rum</option>
+    <option value="Contessa Rum">Contessa Rum</option>
+    <option value="Bacardi Rum">Bacardi Rum</option>
+    <option value="Captain Morgan Rum">Captain Morgan Rum</option>
+    <option value="Havana Club Rum">Havana Club Rum</option>
+  </select> 
+    <input class="col-xs-3 col-sm-3 col-md-3 col-lg-3" type="number" ng-model="itemAdder.itemQuantity" id="quantity" placeholder="Quantity">  
+    <button id="addtocart" class="col-xs-3 col-sm-3 col-md-3 col-lg-3" ng-click="itemAdder.addItem();">Add Item TO Cart</button> 
+</div>
+<h2>Food Categories</h2>
+<div id="carts" ng-controller="ShoppingListAddController as itemAdder">
+    <label class="col-xs-3 col-sm-3 col-md-3 col-lg-3" for="biryani">Choose the biryani:</label>
+  <select class="col-xs-3 col-sm-3 col-md-3 col-lg-3" name="biryani" id="biryani" ng-model="itemAdder.itemName">
+    <option value="Hyderabadi biryani">Hyderabadi biryani</option>
+    <option value="Kalyani biryani">Kalyani biryani</option>
+    <option value="Memoni biryani">Memoni biryani</option>
+    <option value="Mughlai biryani">Mughlai biryani</option>
+    <option value="malabar biryani">malabar biryani</option>
+    <option value="Bombay biryani">Bombay biryani</option>
+    <option value="Ambur biryani">Ambur biryani</option>
+    <option value="Lucknowi biryani">Lucknowi biryani</option>
+  </select> 
+    <input class="col-xs-3 col-sm-3 col-md-3 col-lg-3" type="number" ng-model="itemAdder.itemQuantity" id="quantity" placeholder="Quantity">  
+    <button id="addtocart" class="col-xs-3 col-sm-3 col-md-3 col-lg-3" ng-click="itemAdder.addItem();">Add Item TO Cart</button> 
+</div>
+<div id="carts" ng-controller="ShoppingListAddController as itemAdder">
+    <label class="col-xs-3 col-sm-3 col-md-3 col-lg-3" for="Starters">Choose the Starters:</label>
+  <select class="col-xs-3 col-sm-3 col-md-3 col-lg-3" name="Starters" id="Starters" ng-model="itemAdder.itemName">
+    <option value="Kebabs">Kebabs</option>
+    <option value="Stir Fried Chilli Chicken">Stir Fried Chilli Chicken</option>
+    <option value="Microwave Paneer tikkas">Microwave Paneer tikkas</option>
+    <option value="Aloo & Dal ki Tikka">Aloo & Dal ki Tikka</option>
+    <option value="Cheese Balls">Cheese Balls</option>
+    <option value="Bhuna Masala Chicken Wings">Bhuna Masala Chicken Wings</option>
+    <option value="Tangri Kebabs">Tangri Kebabs</option>
+    <option value="Chicken Satay">Chicken Satay</option>
+    <option value="Hot Basil Chicken Cups">Hot Basil Chicken Cups</option>
+    <option value="Crumb-Fried Chicken">Crumb-Fried Chicken</option>
+  </select> 
+    <input class="col-xs-3 col-sm-3 col-md-3 col-lg-3" type="number" ng-model="itemAdder.itemQuantity" id="quantity" placeholder="Quantity">  
+    <button id="addtocart" class="col-xs-3 col-sm-3 col-md-3 col-lg-3" ng-click="itemAdder.addItem();">Add Item TO Cart</button> 
+</div>
+<div id="carts" ng-controller="ShoppingListAddController as itemAdder">
+    <label class="col-xs-3 col-sm-3 col-md-3 col-lg-3" for="Chicken">Choose the Chicken:</label>
+  <select class="col-xs-3 col-sm-3 col-md-3 col-lg-3" name="Chicken" id="Chicken" ng-model="itemAdder.itemName">
+    <option value="Paprika Roast Chicken">Paprika Roast Chicken</option>
+    <option value="Quick Chicken Curry">Quick Chicken Curry</option>
+    <option value="Gulit-free BBQ Chicken">Gulit-free BBQ Chicken</option>
+    <option value="Basil Chicken">Basil Chicken</option>
+    <option value="Oat Crusted Chicken Tenders">Oat Crusted Chicken Tenders</option>
+    <option value="Sesame Chicken Salad">Sesame Chicken Salad</option>
+    <option value="Light Chicken Fiesta">Light Chicken Fiesta</option>
+    <option value="Grilled Chicken With Mustard Sauce">Grilled Chicken With Mustard Sauce</option>
+    <option value="Ginger Chicken">Ginger Chicken</option>
+    <option value="Chicken Kathi Rolls">Chicken Kathi Rolls</option>
+  </select> 
+    <input class="col-xs-3 col-sm-3 col-md-3 col-lg-3" type="number" ng-model="itemAdder.itemQuantity" id="quantity" placeholder="Quantity">  
+    <button id="addtocart" class="col-xs-3 col-sm-3 col-md-3 col-lg-3" ng-click="itemAdder.addItem();">Add Item TO Cart</button> 
+</div>
+<div id="carts" ng-controller="ShoppingListAddController as itemAdder">
+    <label class="col-xs-3 col-sm-3 col-md-3 col-lg-3" for="Desserts">Choose the Desserts:</label>
+  <select class="col-xs-3 col-sm-3 col-md-3 col-lg-3" name="Desserts" id="Desserts" ng-model="itemAdder.itemName">
+    <option value="Apple pie">Apple pie</option>
+    <option value="Lemon tart">Lemon tart</option>
+    <option value="Fudgy Chewy Brownies">Fudgy Chewy Brownies</option>
+    <option value="Low Fat Tiramisu">Low Fat Tiramisu</option>
+    <option value="Chocolate Coffee Truffle">Chocolate Coffee Truffle</option>
+    <option value="Hot Chocolate Cake">Hot Chocolate Cake</option>
+    <option value="Hot Cointreau Souffle">Hot Cointreau Souffle</option>
+    <option value="Eggless Chocolate Mousse">Eggless Chocolate Mousse</option>
+    <option value="Kesari Shirkhand">Ginger Chicken</option>
+    <option value="Chicken Kathi Rolls">Kesari Shirkhand</option>
+  </select> 
+    <input class="col-xs-3 col-sm-3 col-md-3 col-lg-3" type="number" ng-model="itemAdder.itemQuantity" id="quantity" placeholder="Quantity">  
+    <button id="addtocart" class="col-xs-3 col-sm-3 col-md-3 col-lg-3" ng-click="itemAdder.addItem();">Add Item TO Cart</button> 
+</div>
+<div id="carts" ng-controller="ShoppingListAddController as itemAdder">
+    <label class="col-xs-3 col-sm-3 col-md-3 col-lg-3" for="Soft Drinks">Choose the Drinks:</label>
+  <select class="col-xs-3 col-sm-3 col-md-3 col-lg-3" name="Soft Drinks" id="Soft Drinks" ng-model="itemAdder.itemName">
+    <option value="Coke">Coke</option>
+    <option value="Pepsi">Pepsi</option>
+    <option value="Sprite">Sprite</option>
+    <option value="Thums Up">Thums Up</option>
+    <option value="Fanta">Fanta</option>
+    <option value="Maaza">Maaza</option>
+    <option value="Mirinda">Mirinda</option>
+    <option value="Mountain Dew">Mountain Dew</option>
+    <option value="Bailey Water Bottle">Bailey Water Bottle</option>
+    <option value="Smart Water Bottle">Smart Water Bottle</option>
+  </select> 
+    <input class="col-xs-3 col-sm-3 col-md-3 col-lg-3" type="number" ng-model="itemAdder.itemQuantity" id="quantity" placeholder="Quantity">  
+    <button id="addtocart" class="col-xs-3 col-sm-3 col-md-3 col-lg-3" ng-click="itemAdder.addItem();">Add Item TO Cart</button> 
+</div>
+<div id="carts" ng-controller="ShoppingListAddController as itemAdder">
+    <label class="col-xs-3 col-sm-3 col-md-3 col-lg-3" for="Snacks">Choose the Snacks:</label>
+  <select class="col-xs-3 col-sm-3 col-md-3 col-lg-3" name="Snacks" id="Snacks" ng-model="itemAdder.itemName">
+    <option value="Bran Whole Wheat Muffins">Bran Whole Wheat Muffins</option>
+    <option value="Lentil and Charred Broccoli Chaat">Lentil and Charred Broccoli Chaat</option>
+    <option value="Three bean chaat">Three bean chaat</option>
+    <option value="Ragi cookies">Ragi cookies</option>
+    <option value="Mixed Millet Bhel Puri">Mixed Millet Bhel Puri</option>
+    <option value="Elaichi Granola Bar">Elaichi Granola Bar</option>
+  </select> 
+    <input class="col-xs-3 col-sm-3 col-md-3 col-lg-3" type="number" ng-model="itemAdder.itemQuantity" id="quantity" placeholder="Quantity">  
+    <button id="addtocart" class="col-xs-3 col-sm-3 col-md-3 col-lg-3" ng-click="itemAdder.addItem();">Add Item TO Cart</button> 
+</div>
+</div>
+<br>
+<br>
+<div ng-controller="ShoppingListShowController as showList">
+        <li ng-repeat="item in showList.items">
+            {{item.quantity}} of {{item.name}}
+            <button ng-click="showList.removeItem($index);">Remove Item</button>
+        </li>
+  </div>
+  <br>
+  <br>
+  <button type="submit">Place The Order</button>
+
+    <!--footer-->
+    <footer class="panel-footer">
+        <div class="container">
+            <div class="row">
+                <section id="hours" class="col-sm-4">
+                  <span>Hours:</span><br>
+                  Sun-Thurs: 11:15am - 12:00pm<br>
+                  Fri: 11:15am - 10:30pm<br>
+                  monday Closed
+                  <hr class="visible-xs">
+                </section>
+                <section id="address" class="col-sm-4">
+                  <span>Address:</span><br>
+                  pendhurthi-anandhapuram highway Road<br>
+                  Sontyam, Visakhapatnam-531173 
+                  <p>* Delivery area within 13-14 k.M, with minimum order of 2000 plus 500 charge for all deliveries.</p>
+                  <hr class="visible-xs">
+                </section>
+                <section id="testimonials" class="col-sm-4">
+                    <span>Testimonials:</span><br>
+                  <p>"We serve the best beers and alcoholic<br> beverages here!"</p>
+                  <p>"Amazing stuff makes the sitting beautiful!"</p>
+                </section>
+              </div>
+              <br>
+                <div class="text-center">
+                    &copy;Copyright NSRIT RESTRO BAR 2023
+                </div>
+        </div>
+    </footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</html>
